@@ -4,7 +4,10 @@
   "description": "Este es mi primer proyecto de node",
   "main": "index.js",
   "scripts": {
-    "start":"node src/index.js",
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
+    "lint": "eslint \"./src/**/*.js\"",
+    "lint:fix": "eslint --fix \"./src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +20,17 @@
   "bugs": {
     "url": "https://github.com/seba5197/mi-primer-proyecto-node/issues"
   },
-  "homepage": "https://github.com/seba5197/mi-primer-proyecto-node#readme"
+  "homepage": "https://github.com/seba5197/mi-primer-proyecto-node#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "nodemon": "^2.0.15"
+  }
 }
