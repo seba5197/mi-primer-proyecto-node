@@ -22,7 +22,11 @@
   },
   "homepage": "https://github.com/seba5197/mi-primer-proyecto-node#readme",
   "dependencies": {
+    "error": "^10.4.0",
     "express": "^4.17.3",
+    "express-handlebars": "^6.0.3",
+    "hbs": "^4.2.0",
+    "lens": "^0.0.1",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
